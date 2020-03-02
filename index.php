@@ -15,7 +15,7 @@ if(isset($_GET['series_title'])) {
         $result_series = $pdo->query("SELECT id, title, rating FROM series ORDER BY title DESC");
     }
 }
-if(isset($_GET['series_rating'])){
+if(isset($_GET['series_rating'])) {
     if($_GET['series_rating'] == 'ASC') {
         $result_series = $pdo->query("SELECT id, title, rating FROM series ORDER BY rating ASC");
     }
@@ -23,7 +23,7 @@ if(isset($_GET['series_rating'])){
         $result_series = $pdo->query("SELECT id, title, rating FROM series ORDER BY rating DESC");
     }
 }
-if(isset($_GET['films_title'])){
+if(isset($_GET['films_title'])) {
     if($_GET['films_title'] == 'ASC') {
         $result_films = $pdo->query("SELECT volgnummer, titel, duur_in_min FROM films ORDER BY titel ASC");
     }
